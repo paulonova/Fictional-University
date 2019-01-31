@@ -64,3 +64,28 @@
 [31-Jan-2019 11:15:14] NOTICE: fpm is running, pid 43
 [31-Jan-2019 11:15:14] NOTICE: ready to handle connections
 [31-Jan-2019 11:16:06] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 11:58:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 11:58:21] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 11:58:32] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 12:00:06] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 12:00:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 12:01:57] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 12:02:51] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 12:02:56] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:00:42] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:01:25] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:01:37] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:01:52] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:31:21] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:31:26] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:32:32] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:33:35] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:33:46] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:35:01] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 14:35:36] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 15:18:14] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 15:18:45] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 15:20:32] NOTICE: Terminating ...
+[31-Jan-2019 15:20:32] NOTICE: exiting, bye-bye!
+[31-Jan-2019 15:20:45] NOTICE: fpm is running, pid 52
+[31-Jan-2019 15:20:45] NOTICE: ready to handle connections
