@@ -1,0 +1,12 @@
+[31-Jan-2019 09:45:41 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[31-Jan-2019 10:28:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_header() in /app/public/wp-content/themes/fictional-university-theme/index.php:1
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/index.php on line 1
+[31-Jan-2019 11:34:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /app/public/wp-content/themes/fictional-university-theme/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/index.php on line 1
