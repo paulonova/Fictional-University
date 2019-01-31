@@ -37,8 +37,6 @@ define( 'DB_CHARSET', 'utf8' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-// define('CONCATENATE_SCRIPTS', false);
-
 /**
  * Authentication Unique Keys and Salts.
  *
@@ -48,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'cCgVRU85igem4PZnKvHeOls6eQO+hQhRk26B3Xi5oJIgqXlmtEh/kXOAZ2/5t7MDMeRlLVigCa8gA9iiazGggg==');
-define('SECURE_AUTH_KEY',  '9LYp2puKq/AtLDPNurRzkm1MtJJy5Twdk4UFjGjAADMRHUWpB2SoSznWJsN2nFlQb9hodigV6+Z5u2MMsdD0tQ==');
-define('LOGGED_IN_KEY',    'uUkLo6uYYVGfkDUd6f89bvaP68yrWstTqPRwYoCQzl5a1woMiOB23RTstHCKcJpNoyN+g6SeRB/GCch/4uz1yg==');
-define('NONCE_KEY',        'omWYahHVrCp0e6DHqekTher/HBpFHS//z2gka58CI0r6NUuEdw3B8SuyapHbBJc5OQkzyHs1xRlwXtQ3Gii6GQ==');
-define('AUTH_SALT',        'mswoMkLqoxcw44Cl/ez/Ron80WBvBeQusqNJb6GKZspP0IXScyPuSsS/OTvz0t8nSxKdebHlYbr5hbEBU4sm8Q==');
-define('SECURE_AUTH_SALT', 'wjf8tyjX8WX7q/wogBUCyJh+bX9SP9gn/YgQDiprRPyp1CqfrdDipfklb8Rm8Ufu0WmUdvxFspjnFmSV3LdPEA==');
-define('LOGGED_IN_SALT',   'm8qf09t1OZXl8k7LOFE/5P0LJABiqCZxrUuFccBsXhEv852TALdmf4Hra/HNuIDJEkao0LnpR4OTe0BZvE/sBA==');
-define('NONCE_SALT',       'BarQ2HhGsrD4vw41tHtb9U/zni7l9ooDHZNOof6xnWAwQc2wU6wg/QGqUeKwghcna+CMAzFjFDitURBZJ6W7Hw==');
+define('AUTH_KEY',         'Yg6HcGBC66Z7Rm7q/FXfBiL0WbIB0pn5HJ5J8KkjiGcBuNFxEe5cKMLZ1i9vv5v6kMOa2wGKJ3lMOiNzwdm6ow==');
+define('SECURE_AUTH_KEY',  'hSzK7HWjh/t1+T5p9fueovgZcdZzRL50xLGR9ZoMr1qnNA1dwSYMJivlAEaOwGiQmZVFXOIPnyJTNm2sFKXJeA==');
+define('LOGGED_IN_KEY',    'GpbUBiKs+7O13r2s3AIa0wYbkd5cZ+VzeLB/9OG5KRu7KOlL2y9u/hStDSx6qvunc0Mn9kJxhrCBuyBsRI5q5g==');
+define('NONCE_KEY',        'WpEyDPYTIUS69u6aA6yDq5C1GJsvPZXo8rDzCS9Krf1TdawA/bJ4Kgqwq11oMcK4RTyKY6nOkJ/fCQFMrsr/DQ==');
+define('AUTH_SALT',        'O4fnCcyviSpklx+mVerHHsL1V4zLRLwhZ03Kl559TeCnRUESxt6QbiDvoSzKJMXPVqSrYMf4AFJ4JdNEcRuzUQ==');
+define('SECURE_AUTH_SALT', 'Vaqyrp8CRhrYqTnR4wg1W6WMwcm75DSqYiffDAPfAeZSJ+DPmVWAVkPBmet7cshj1MGsQlzATB4gtuK9wgE5Wg==');
+define('LOGGED_IN_SALT',   '4tcsZKM4oblye06IMJk7uQCEOkokhB31N3myrPx9sxLAHXccPBi4Hq+EDQ3qiOaPTNrtxbA22TRSWKwOuWXugw==');
+define('NONCE_SALT',       'qCr6mKB+JywOOP1WUBYP5+2fBoc9yFCagqpnZANthObGlcVVYT00zIssMJRgIIJCJyDI9Pb+s+lcTsrR7xGnmg==');
 
 /**
  * WordPress Database Table prefix.
