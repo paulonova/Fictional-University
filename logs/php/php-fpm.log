@@ -1,2 +1,17 @@
 [30-Jan-2019 15:35:57] NOTICE: fpm is running, pid 16
 [30-Jan-2019 15:35:57] NOTICE: ready to handle connections
+[30-Jan-2019 20:06:40] NOTICE: Terminating ...
+[30-Jan-2019 20:06:40] NOTICE: exiting, bye-bye!
+[30-Jan-2019 23:03:25] NOTICE: fpm is running, pid 56
+[30-Jan-2019 23:03:25] NOTICE: ready to handle connections
+[30-Jan-2019 23:04:20] NOTICE: Terminating ...
+[30-Jan-2019 23:04:20] NOTICE: exiting, bye-bye!
+[31-Jan-2019 08:30:40] NOTICE: fpm is running, pid 55
+[31-Jan-2019 08:30:40] NOTICE: ready to handle connections
+[31-Jan-2019 08:35:01] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:35:20] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:39:08] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:39:55] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:40:36] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:42:32] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[31-Jan-2019 08:50:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
