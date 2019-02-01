@@ -1,0 +1,8 @@
+[01-Feb-2019 09:03:10 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_get_post_parent_id(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/page.php on line 21 and exactly 1 expected in /app/public/wp-includes/post.php:6287
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/page.php(21): wp_get_post_parent_id()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-includes/post.php on line 6287
