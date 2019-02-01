@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html <?php 
+use function Lib\Extras\body_class;
+language_attributes();?>>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="<?php bloginfo('charset');?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <title>Page Title</title>  Page Title is set in functions.php-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head();?>    <!--WordPress take care of all css and javascripts links places in functions.php  -->
 </head>
-<body>
+
+<body <?php body_class();?>> <!-- show different classes dependent on witch page I am -->
  
 <header class="site-header">
     <div class="container">

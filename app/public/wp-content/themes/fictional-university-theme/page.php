@@ -25,16 +25,36 @@
         </a> <span class="metabox__main"><?php the_title();?></span></p>
       </div>
     <?php endif;?>
+
+    <?php 
+      /**Return ZERO if page has no child (is a parent)*/
+      $testArray = get_pages(array(
+        'child_of' => get_the_ID()
+      ));
+    ?>
     
-    
-    <!--  
-    <div class="page-links">
-      <h2 class="page-links__title"><a href="#">About Us</a></h2>
-      <ul class="min-list">
-        <li class="current_page_item"><a href="#">Our History</a></li>
-        <li><a href="#">Our Goals</a></li>
-      </ul>
-    </div> -->
+    <?php if($theParent || $testArray):?>
+      <div class="page-links">
+        <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent)?>"><?php echo get_the_title($theParent);?></a></h2>
+        <ul class="min-list">
+
+        <!--  Define if the page is a Parent or a Child..-->
+          <?php if($theParent):?>
+            <?php $findChildOf = $theParent; ?>  <!-- Parent page ID-->
+          <?php else:?>
+            <?php $findChildOf = get_the_ID(); ?>  <!-- Current page ID-->
+          <?php endif;?>
+
+            <?php wp_list_pages(array(
+              'title_li' => NULL,
+              'child_of' => $findChildOf,
+              'sort_column' => 'menu_order' /** follow the order nummer from wordpress edit page */
+            ));?>
+          
+        </ul>
+      </div>     
+    <?php endif;?>
+     
 
     <div class="generic-content">
       <?php the_content();?>
