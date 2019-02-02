@@ -1,6 +1,18 @@
-<!DOCTYPE html <?php 
-use function Lib\Extras\body_class;
-language_attributes();?>>
+<?php 
+    /** THIS PAGE -- WARNING!! 
+     * This page is to demonstrate how to create a DINAMIC MENU created in wordpress Editor
+     * Steps:
+     * 1- Open the functions.php
+     * 2- Create in university_features function the - register_nav_menu('name', 'Menu names')
+     * 3- Open Menus and create a Menu Name
+     * 4- Select witch Most Recent I want
+     * 5- select Display Locaation []
+     * 
+    */
+?>
+
+
+<!DOCTYPE html <?php language_attributes();?>>
 <html>
 <head>
     <meta charset="<?php bloginfo('charset');?>" />
@@ -20,8 +32,15 @@ language_attributes();?>>
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
         <nav class="main-navigation">
+
+          <!-- DINAMIC MENU -->
+          <!-- <?php //wp_nav_menu(array(
+            //'theme_location' => 'headerMenuLocation'  /**Registered in function.php */
+          //))?> -->
+
           <ul>
-            <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
+            <!-- Turn link selected when I´m in the parent and in the child page -->
+            <li <?php if(is_page('about-us') || wp_get_post_parent_id(get_the_ID()) == 28) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
             <li><a href="#">Programs</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Campuses</a></li>

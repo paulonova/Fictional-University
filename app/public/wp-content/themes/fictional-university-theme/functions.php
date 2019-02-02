@@ -20,6 +20,9 @@ add_action('wp_enqueue_scripts', 'university_files');
 /** function to set automatic the page title */
 function university_features(){
   add_theme_support('title-tag');
+  register_nav_menu('headerMenuLocation', 'Header Menu Location');/**DINAMIC MENU */
+  // register_nav_menu('footerLocationOne', 'Footer Location One');/**DINAMIC MENU */
+  // register_nav_menu('footerLocationTwo', 'Footer Location Two');/**DINAMIC MENU */
 }
 add_action('after_setup_theme', 'university_features');
 

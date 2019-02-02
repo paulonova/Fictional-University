@@ -6,3 +6,10 @@ Stack trace:
 #3 /app/public/index.php(17): require('/app/public/wp-...')
 #4 {main}
   thrown in /app/public/wp-includes/post.php on line 6287
+[02-Feb-2019 12:58:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:07:11 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:12:21 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:12:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:12:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:12:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[02-Feb-2019 13:12:33 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31

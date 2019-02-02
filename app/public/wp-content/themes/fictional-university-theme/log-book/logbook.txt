@@ -1,0 +1,5 @@
+
+*************************** IMPORTANT IFORMATION TO FUTURES PROJECTS *********************************
+
+** Create a Blog Page and a Home Page in wordpress editor, after that go to Setting - Reading Settings and
+select a static_page : HommePage = Home and PostPage = Blog.
