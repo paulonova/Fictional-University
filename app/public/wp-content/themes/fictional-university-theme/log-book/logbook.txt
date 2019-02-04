@@ -23,12 +23,30 @@ will separate the catgories name. ex: , / -
 
 **BLOG CONSTRUCTION
 
+* I used the same layout from page.php
+
 1- Pagination, if I have a lot of posts..  <?php echo paginate_links();?>
 
 2- single.php  is used for a individual posts..
    page.php is used for a individual pages.
 
-3- Author and Cathegory screen should have a diferent php file..
+3- Author and Category screen should have a diferent php file..
     archive.php is the file that handle this screens.
     * <?php single_cat_title();?>  <!-- get the category name -->
     * <?php echo 'Posts by ' . get_the_author();?>  <!-- get the author name -->
+    But I used a new wordprerss function that handle everything for me, category, author name and date..
+
+4- Set in front page the real blog posts dinamic..
+    * Using wordpress Custom Query.  
+    $homePagePosts = new WP_Query(array(
+      'posts_per_page' => 2
+      ... there is more in codex site...
+    ));
+
+  IMPORTANT: Right after the ending of while loop using WP_Query, I need to reset the data buffer writing 
+  the function <?php wp_reset_postdata();?>
+
+  * set some links to go to blog page using <?php echo site_url('/blog');?>
+
+  ** In Wordpress everything comes in form of pages or posts, page = post_type('page') and post = post_type('post')..
+  
