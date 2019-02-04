@@ -2,7 +2,7 @@
 /*!40014 SET FOREIGN_KEY_CHECKS=0*/;
 /*!40103 SET TIME_ZONE='+00:00' */;
 INSERT INTO `wp_usermeta` VALUES
-(1,1,"nickname","paulonova"),
+(1,1,"nickname","Paulo Nova"),
 (2,1,"first_name",""),
 (3,1,"last_name",""),
 (4,1,"description",""),

@@ -3,3 +3,32 @@
 
 ** Create a Blog Page and a Home Page in wordpress editor, after that go to Setting - Reading Settings and
 select a static_page : HommePage = Home and PostPage = Blog.
+* Create a new page called front-page.php and copy the my frontpage code into it.
+* Create index.php or delete its content to be used as blog-page.
+
+
+
+** This peace of code make the current page link be selected and all it child.
+<?php if(is_page('about-us') || wp_get_post_parent_id(get_the_ID()) == 28) echo 'class="current-menu-item"'?>
+
+
+**CREATING POSTS AND STYLING IT..
+In index.php:
+
+<?php the_author_posts_link();?>  Show the author name, I can change it in wordpress editor Users, Your Profine 
+and change the Nickname and Display name publicly as ..
+
+<?php echo get_the_category_list('HERE');?>  is a post have a multiple categories, wherever I put in HERE 
+will separate the catgories name. ex: , / - 
+
+**BLOG CONSTRUCTION
+
+1- Pagination, if I have a lot of posts..  <?php echo paginate_links();?>
+
+2- single.php  is used for a individual posts..
+   page.php is used for a individual pages.
+
+3- Author and Cathegory screen should have a diferent php file..
+    archive.php is the file that handle this screens.
+    * <?php single_cat_title();?>  <!-- get the category name -->
+    * <?php echo 'Posts by ' . get_the_author();?>  <!-- get the author name -->
