@@ -49,4 +49,10 @@ will separate the catgories name. ex: , / -
   * set some links to go to blog page using <?php echo site_url('/blog');?>
 
   ** In Wordpress everything comes in form of pages or posts, page = post_type('page') and post = post_type('post')..
+
+
+  ** GULP
+  https://github.com/LearnWebCode/Vagrant-lamp
+  Installed gulp i root project, but doesn´t work so well when deploy SASS files..
+
   
