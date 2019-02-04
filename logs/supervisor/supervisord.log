@@ -235,3 +235,16 @@
 2019-02-04 08:17:39,985 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-02-04 08:17:39,989 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-02-04 08:17:39,995 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-02-04 18:43:43,339 WARN received SIGTERM indicating exit request
+2019-02-04 18:43:43,341 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2019-02-04 18:43:44,360 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2019-02-04 18:43:44,418 INFO stopped: mysql (exit status 0)
+2019-02-04 18:43:44,421 INFO stopped: MailHog (terminated by SIGTERM)
+2019-02-04 18:43:44,443 INFO stopped: nginx (exit status 0)
+2019-02-04 18:43:45,450 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2019-02-04 18:43:45,481 INFO stopped: php-fpm (exit status 0)
+2019-02-04 18:43:46,171 INFO reaped unknown pid 15457
+2019-02-04 18:43:46,175 INFO reaped unknown pid 15459
+2019-02-04 18:43:46,257 INFO reaped unknown pid 76
+2019-02-04 18:43:46,496 INFO waiting for varnishd to die
+2019-02-04 18:43:46,669 INFO stopped: varnishd (exit status 0)
