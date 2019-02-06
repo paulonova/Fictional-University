@@ -1,4 +1,4 @@
-# Fictional-University
+# International-University
 Wordpress project to my final examination as a Frontend Developer in 2019/Nackademin
 
 <!DOCTYPE html>
