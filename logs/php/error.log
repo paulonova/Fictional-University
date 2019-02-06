@@ -462,3 +462,5 @@ Stack trace:
 [06-Feb-2019 16:49:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/international-university-theme/footer.php on line 31
 [06-Feb-2019 16:49:38 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/international-university-theme/footer.php on line 31
 [06-Feb-2019 16:52:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/international-university-theme/footer.php on line 31
+[06-Feb-2019 16:53:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/international-university-theme/footer.php on line 31
+[06-Feb-2019 16:54:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/international-university-theme/footer.php on line 31
