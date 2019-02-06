@@ -27,7 +27,7 @@
  
 <header class="site-header">
     <div class="container">
-      <h1 class="school-logo-text float-left"><a href="<?php echo site_url(); ?>"><strong>Fictional</strong> University</a></h1>
+      <h1 class="school-logo-text float-left"><a href="<?php echo site_url(); ?>"><strong>International</strong> University</a></h1>
       <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
@@ -42,7 +42,7 @@
             <!-- Turn link selected when I´m in the parent and in the child page -->
             <li <?php if(is_page('about-us') || wp_get_post_parent_id(get_the_ID()) == 28) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
             <li><a href="#">Programs</a></li>
-            <li <?php if (get_post_type() == 'event') echo 'class="current-menu-item"';?>><a href="<?php echo get_post_type_archive_link('event')?>">Events</a></li>
+            <li <?php if (get_post_type() == 'event' || is_page('past-events')) echo 'class="current-menu-item"';?>><a href="<?php echo get_post_type_archive_link('event')?>">Events</a></li>
             <li><a href="#">Campuses</a></li>
             <li <?php if(get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/blog');?>">Blog</a></li>
           </ul>

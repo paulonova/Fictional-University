@@ -111,7 +111,10 @@ archives without create a new WP_Query()..
 && $query->is_main_query()) 'if I am really in /event slug'
 
 
+** PAST EVENTS *******************
+* Create a page call page-past-event.php to show all my past events, (event-date != today date)..
+* Pagination required a special job in it..
 
-
+fictional-university-theme
 
 

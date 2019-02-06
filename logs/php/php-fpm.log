@@ -36,3 +36,28 @@
 [05-Feb-2019 21:38:01] NOTICE: exiting, bye-bye!
 [06-Feb-2019 08:52:43] NOTICE: fpm is running, pid 39
 [06-Feb-2019 08:52:43] NOTICE: ready to handle connections
+[06-Feb-2019 14:22:22] NOTICE: Terminating ...
+[06-Feb-2019 14:22:22] NOTICE: exiting, bye-bye!
+[06-Feb-2019 14:47:42] NOTICE: fpm is running, pid 9
+[06-Feb-2019 14:47:42] NOTICE: ready to handle connections
+[06-Feb-2019 14:49:04] NOTICE: Terminating ...
+[06-Feb-2019 14:49:04] NOTICE: exiting, bye-bye!
+[06-Feb-2019 15:08:55] NOTICE: fpm is running, pid 54
+[06-Feb-2019 15:08:55] NOTICE: ready to handle connections
+[06-Feb-2019 15:15:28] NOTICE: Terminating ...
+[06-Feb-2019 15:15:28] NOTICE: exiting, bye-bye!
+[06-Feb-2019 15:18:19] NOTICE: fpm is running, pid 22
+[06-Feb-2019 15:18:19] NOTICE: ready to handle connections
+[06-Feb-2019 15:20:15] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
+[06-Feb-2019 15:21:49] NOTICE: Terminating ...
+[06-Feb-2019 15:21:49] NOTICE: exiting, bye-bye!
+[06-Feb-2019 15:32:30] NOTICE: fpm is running, pid 32
+[06-Feb-2019 15:32:30] NOTICE: ready to handle connections
+[06-Feb-2019 15:32:40] NOTICE: Terminating ...
+[06-Feb-2019 15:32:40] NOTICE: exiting, bye-bye!
+[06-Feb-2019 15:46:52] NOTICE: fpm is running, pid 25
+[06-Feb-2019 15:46:52] NOTICE: ready to handle connections
+[06-Feb-2019 15:58:56] NOTICE: Terminating ...
+[06-Feb-2019 15:58:56] NOTICE: exiting, bye-bye!
+[06-Feb-2019 15:59:04] NOTICE: fpm is running, pid 24
+[06-Feb-2019 15:59:04] NOTICE: ready to handle connections
