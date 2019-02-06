@@ -51,8 +51,24 @@ will separate the catgories name. ex: , / -
   ** In Wordpress everything comes in form of pages or posts, page = post_type('page') and post = post_type('post')..
 
 
-  ** GULP
+  ** GULP *********************************
   https://github.com/LearnWebCode/Vagrant-lamp
   Installed gulp i root project, but doesn´t work so well when deploy SASS files..
 
   
+  **CREATING A POST TYPE *******************
+
+  => To create my Post Types, I will create first a folder (Must Use Plugins) that in wordpress is a special place that user or admin cannot 
+  disable by accident, it´s ALWAYS ON. More informations https://codex.wordpress.org/Must_Use_Plugins
+
+  By default, in wordpress come just two post type, Posts and Pages.
+  But I can create how many I need!!
+
+  1- Inside of wp-content, I create a new folder mu-plugins and inside create a file (name doesn´t mather) that will
+  content my post types ..
+
+  I create an EVENT post type in university_post_type.php and now on I can create many more.
+
+  
+
+

@@ -22,4 +22,6 @@ INSERT INTO `wp_usermeta` VALUES
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"managenav-menuscolumnshidden","a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}"),
 (20,1,"metaboxhidden_nav-menus","a:1:{i:0;s:12:\"add-post_tag\";}"),
-(21,1,"nav_menu_recently_edited","2");
+(21,1,"nav_menu_recently_edited","2"),
+(22,1,"closedpostboxes_post","a:1:{i:0;s:12:\"revisionsdiv\";}"),
+(23,1,"metaboxhidden_post","a:6:{i:0;s:13:\"trackbacksdiv\";i:1;s:10:\"postcustom\";i:2;s:16:\"commentstatusdiv\";i:3;s:11:\"commentsdiv\";i:4;s:7:\"slugdiv\";i:5;s:9:\"authordiv\";}");
