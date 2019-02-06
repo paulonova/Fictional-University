@@ -17,9 +17,21 @@
         <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
 
         <?php 
+        $today = date('Ymd');
           $homePageEvents = new WP_Query(array(
-            'posts_per_page' => 2,
-            'post_type' => 'event'
+            'posts_per_page' => 2,  // -1 means to get all posts from these post type..
+            'post_type' => 'event',
+            'meta_key' => 'event_date', // event date order
+            'orderby' => 'meta_value_num', // event date order
+            'order' => 'ASC', // ascendent
+            'meta_query' => array(  // to sort only actual events..
+              array(
+                'key' => 'event_date',
+                'compare' => '>=',
+                'value' => $today,
+                'type' => 'numeric'
+              )
+            )
           ));
         ?>
 
@@ -28,8 +40,11 @@
           
         <div class="event-summary">
           <a class="event-summary__date t-center" href="<?php the_permalink();?>">
-            <span class="event-summary__month"><?php the_time('M')?></span>
-            <span class="event-summary__day"><?php the_time('d')?></span>  
+            <span class="event-summary__month"><?php 
+              $eventDate = new DateTime(get_field('event_date', false, false)); // Need to have false, false..
+              echo $eventDate->format('M');
+            ?></span>
+            <span class="event-summary__day"><?php echo $eventDate->format('d');?></span>  
           </a>
           <div class="event-summary__content">
             <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
@@ -56,9 +71,12 @@
 
         <?php 
           $homePagePosts = new WP_Query(array(
-            'posts_per_page' => 2
+            'posts_per_page' => 2,
+            'orderby' => 'title',
+            'order' => 'ASC', // ascendent
           ));
         ?>
+        
         <?php while($homePagePosts -> have_posts()):?>
         <?php $homePagePosts -> the_post();?>
           

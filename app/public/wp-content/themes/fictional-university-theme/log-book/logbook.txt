@@ -67,8 +67,51 @@ will separate the catgories name. ex: , / -
   1- Inside of wp-content, I create a new folder mu-plugins and inside create a file (name doesn´t mather) that will
   content my post types ..
 
-  I create an EVENT post type in university_post_type.php and now on I can create many more.
+  I create an EVENT post type in university_post_type.php and now on I can create many more using the same code.
 
+
+  **CREATING A CUSTOM FIELDS *******************
+
+  * To create a custom filed without plugin, I need to write some code in university_post_type.php 
+    ex: 'supports' => array('title', 'editor', 'excerpt', 'custom-fields'), that give the support to all
+    this fields.
   
+  * Plugins:
+  ACF -> Advanced Custom fields
+  CMB2 -> Custom Metaboxes 2
+
+
+
+** Ordering (Sorting) Custom Queries *******************
+
+* META in wordpress is allways the extra or a custom additional data associated to a post, to make the Sorting
+of events rappen by the date-events, i can use meta_value and to use this I need to create another parameter
+called 'meta_key' with the name of the field I want to use  'event_date'.
+
+=> The Upcoming Events need to show only events that WILL HAPPEN, not events from the past.
+"CHALLENGE" - 
+1-  Need to use to sort only actual events..
+'meta_query' => array( 
+              array(
+                'key' => 'event_date',
+                'compare' => '>=',
+                'value' => $today
+              )
+            )
+
+
+
+** In archive_event.php I set the event date using the same code as in front-page.
+
+In functions.php I created a new function 'university_adjust_queries($query)' that will handle the event post
+archives without create a new WP_Query()..
+
+!is_admin() 'If I am in frontpage not admin'
+&& is_post_type_archive('event') 'must be the post type EVENT'
+&& $query->is_main_query()) 'if I am really in /event slug'
+
+
+
+
 
 

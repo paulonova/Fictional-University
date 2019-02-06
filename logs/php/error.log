@@ -243,3 +243,165 @@ Stack trace:
 [06-Feb-2019 09:23:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
 [06-Feb-2019 09:23:55 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
 [06-Feb-2019 09:25:09 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 09:57:48 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (20/07/2017) at position 0 (2): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): DateTime->__construct('20/07/2017')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 09:59:09 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (20/07/2017) at position 0 (2): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): DateTime->__construct('20/07/2017')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:00:05 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (20/07/2017) at position 0 (2): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): DateTime->__construct('20/07/2017')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:00:15 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:01:17 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:02:03 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:02:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:03:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:04:10 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:04:53 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_field(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32 and at least 1 expected in /app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php:20
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): get_field()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/plugins/advanced-custom-fields/includes/api/api-template.php on line 20
+[06-Feb-2019 10:05:18 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (20/07/2017) at position 0 (2): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): DateTime->__construct('20/07/2017')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:05:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:06:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:07:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:07:48 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (20/07/2017) at position 0 (2): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:32
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(32): DateTime->__construct('20/07/2017')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 32
+[06-Feb-2019 10:07:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:08:56 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:11:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 10:12:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:22:06 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:24:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:25:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:30:42 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:30:48 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:31:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:31:59 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:39:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:40:30 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:44:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:51:31 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:52:44 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:54:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:56:27 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 12:57:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:10:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:15:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:16:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:16:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:17:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:17:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:17:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:17:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:18:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Date' not found in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:21
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 21
+[06-Feb-2019 13:20:08 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:21:25 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:32:46 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:33:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:34:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:38:12 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:39:00 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:39:05 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:52:32 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:53:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:54:24 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:54:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:55:07 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:57:23 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:58:20 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:58:29 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
+[06-Feb-2019 13:58:47 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/footer.php on line 31
