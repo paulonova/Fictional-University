@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'Yg6HcGBC66Z7Rm7q/FXfBiL0WbIB0pn5HJ5J8KkjiGcBuNFxEe5cKMLZ1i9vv5v6kMOa2wGKJ3lMOiNzwdm6ow==');
-define('SECURE_AUTH_KEY',  'hSzK7HWjh/t1+T5p9fueovgZcdZzRL50xLGR9ZoMr1qnNA1dwSYMJivlAEaOwGiQmZVFXOIPnyJTNm2sFKXJeA==');
-define('LOGGED_IN_KEY',    'GpbUBiKs+7O13r2s3AIa0wYbkd5cZ+VzeLB/9OG5KRu7KOlL2y9u/hStDSx6qvunc0Mn9kJxhrCBuyBsRI5q5g==');
-define('NONCE_KEY',        'WpEyDPYTIUS69u6aA6yDq5C1GJsvPZXo8rDzCS9Krf1TdawA/bJ4Kgqwq11oMcK4RTyKY6nOkJ/fCQFMrsr/DQ==');
-define('AUTH_SALT',        'O4fnCcyviSpklx+mVerHHsL1V4zLRLwhZ03Kl559TeCnRUESxt6QbiDvoSzKJMXPVqSrYMf4AFJ4JdNEcRuzUQ==');
-define('SECURE_AUTH_SALT', 'Vaqyrp8CRhrYqTnR4wg1W6WMwcm75DSqYiffDAPfAeZSJ+DPmVWAVkPBmet7cshj1MGsQlzATB4gtuK9wgE5Wg==');
-define('LOGGED_IN_SALT',   '4tcsZKM4oblye06IMJk7uQCEOkokhB31N3myrPx9sxLAHXccPBi4Hq+EDQ3qiOaPTNrtxbA22TRSWKwOuWXugw==');
-define('NONCE_SALT',       'qCr6mKB+JywOOP1WUBYP5+2fBoc9yFCagqpnZANthObGlcVVYT00zIssMJRgIIJCJyDI9Pb+s+lcTsrR7xGnmg==');
+define('AUTH_KEY',         'om7j/hFeHVckIf83AibXa+/e+391PnA/8njmnVOURkSQZ2X6puOJI1aA0n88MfH7amcEdmBCy2sjIkxdTM1UVA==');
+define('SECURE_AUTH_KEY',  'Hcl+Lll3apUSCn5LlS7h6cx7jVNuQq19BPGwnDscku8ZwbSYQIDKRcJI80irYnglC/Sirdc5c9DJ3hYqqpoqsg==');
+define('LOGGED_IN_KEY',    'w3kDpjoylpq+eEdSytmF7HMvxYOc32gb2jIRD1Hz4yPBaMyV2rBWFzdf2tc8Ncz/FDD+zg4sPPikDXMcIFhlfw==');
+define('NONCE_KEY',        'ZF5lmkqEZOg3krH4bxcrc59OIykmXxqsvLbso3HlU4u+webND0ZTIkWzi67yU6BTm0+kNgUXt/OtZwgUjTD7vw==');
+define('AUTH_SALT',        'A98ligRW3kQjtDFHNzgA/lV7Pkf5vjb5/NmemHCYaHsLMz12EvBQz1RQZ9mVdOadf7ek7wZa1KvM+i2ITofibA==');
+define('SECURE_AUTH_SALT', '+GVCYCTkOiAcYB0UgWz3klFbS+/2ZJIk5ynedNpvl6rD8KAl14AoeByZbZvCy0/P7xPsVGP6FvygL1z/trZM7Q==');
+define('LOGGED_IN_SALT',   'az7P3DlOoMeXTX9tTTnrRE1KY2dPqcGWT4SdgJ1d3xY0j9pA2heWk9obE3PCTY3hmpa8T468kehJXmEBstA2Mg==');
+define('NONCE_SALT',       'NrVBGDO3vEq62yFiXm6Q8RQPBP6iwFNJge4hbub6rlFdjOJX/WIA1Oj0PAg0b9lEt5kLChNmm34i/z9LKdixuA==');
 
 /**
  * WordPress Database Table prefix.

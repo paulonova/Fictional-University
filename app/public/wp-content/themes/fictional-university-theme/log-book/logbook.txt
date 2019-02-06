@@ -111,6 +111,8 @@ archives without create a new WP_Query()..
 && $query->is_main_query()) 'if I am really in /event slug'
 
 
+** PAST EVENTS *******************
+
 
 
 
