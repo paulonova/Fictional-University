@@ -109,7 +109,7 @@
   </div>
 
   <div class="hero-slider">
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bus.jpg')?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/school-transport.jpg')?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
         <h2 class="headline headline--medium t-center">Free Transportation</h2>
@@ -118,20 +118,20 @@
       </div>
     </div>
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/apples.jpg')?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/nutritional-food.jpg')?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">An Apple a Day</h2>
-        <p class="t-center">Our dentistry program recommends eating apples.</p>
+        <h2 class="headline headline--medium t-center">A Nutritional Food every Day</h2>
+        <p class="t-center">Our Nutritionist program recommendations.</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bread.jpg')?>);">
+  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bar-school.jpg')?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Free Food</h2>
-        <p class="t-center">Fictional University offers lunch plans for those in need.</p>
+        <h2 class="headline headline--medium t-center">School Bar</h2>
+        <p class="t-center">International University offers lunch plans for those in need.</p>
         <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
       </div>
     </div>

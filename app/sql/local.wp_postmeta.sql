@@ -205,4 +205,14 @@ INSERT INTO `wp_postmeta` VALUES
 (217,25,"_wp_trash_meta_time","1549462058"),
 (218,25,"_wp_desired_post_slug","test-page"),
 (219,71,"_edit_last","1"),
-(220,71,"_edit_lock","1549462609:1");
+(220,71,"_edit_lock","1549471168:1"),
+(221,73,"_edit_last","1"),
+(222,73,"_edit_lock","1549470600:1"),
+(223,73,"event_date","20161231"),
+(224,73,"_event_date","field_5c5aac326bef4"),
+(225,74,"_edit_last","1"),
+(226,74,"_edit_lock","1549472651:1"),
+(227,75,"_edit_last","1"),
+(228,75,"_edit_lock","1549472683:1"),
+(229,76,"_edit_last","1"),
+(230,76,"_edit_lock","1549484010:1");

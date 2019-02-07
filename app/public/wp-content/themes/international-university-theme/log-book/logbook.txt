@@ -115,6 +115,10 @@ archives without create a new WP_Query()..
 * Create a page call page-past-event.php to show all my past events, (event-date != today date)..
 * Pagination required a special job in it..
 
-fictional-university-theme
 
 
+** PROGRAMS *******************
+I created in university-post-type.php the post tupe PROGRAMS and some programs like math, biology and english for testing.
+As default these programs open in single.php
+=> To a single program single-program.php was created
+=> To all programs archive-program.php was created

@@ -1,4 +1,4 @@
-<!-- Single is used to a individual posts -->
+<!-- Single is used to a individual events -->
 
 
 <?php get_header();?>
@@ -19,13 +19,9 @@
   <div class="container container--narrow page-section">
     <!-- METABOX -->
     <div class="metabox metabox--position-up metabox--with-home-link">
-      <p><a class="metabox__blog-home-link" href="<?php echo site_url('/blog')?>">
-        <i class="fa fa-home" aria-hidden="true"></i> Blog Home </a> 
-        <span class="metabox__main">
-          Posted by <?php the_author_posts_link();?> 
-          on <?php the_time('y/n/j');?> 
-          <?php echo get_the_category_list(', ');?>
-        </span>
+      <p><a class="metabox__blog-home-link" href="<?php echo get_post_type_archive_link('program');?>">
+        <i class="fa fa-home" aria-hidden="true"></i> All Programs</a> 
+        <span class="metabox__main"><?php the_title();?></span>
       </p>
     </div>
 
