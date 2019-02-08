@@ -44,20 +44,29 @@
       ?>
 
       <?php if($relatedProfessors->have_posts()):?>
-      <hr class="section-break"/>
-      <h2 class="headline headline--medium"><?php echo get_the_title();?> Professors</h2>
+        <hr class="section-break"/>
+        <h2 class="headline headline--medium"><?php echo get_the_title();?> Professors</h2>
 
-      <?php while($relatedProfessors -> have_posts()):?>
-      <?php $relatedProfessors -> the_post();?>
-        <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
-      </div>
-      <?php endwhile;?>
+        <ul class="professor-cards">
+          <?php while($relatedProfessors -> have_posts()):?>
+          <?php $relatedProfessors -> the_post();?>
+            <li class="professor-card__list-item">
+              <a class="professor-card" href="<?php the_permalink(); ?>">
+                <img class="professor-card__image" src="<?php the_post_thumbnail_url('professorLandscape') ?>">
+                <span class="professor-card__name"><?php the_title(); ?></span>
+              </a>
+            </li>
+          <!-- </div> -->
+          <?php endwhile;?>
+        </ul>
 
       <?php else:?>
-      <hr class="section-break"/>
-      <h4 class="headline headline--small">No Professors related to <?php echo get_the_title();?></h4>
+          <hr class="section-break"/>
+          <h4 class="headline headline--small">No Professors related to <?php echo get_the_title();?></h4>
       <?php endif;?>
 
+      <!-- Very IMPORTANT -->
+      <?php wp_reset_postdata();?> 
 
     <!-- Related Events -->
     <?php $today = date('Ymd');
@@ -100,6 +109,7 @@
           ?></span>
           <span class="event-summary__day"><?php echo $eventDate->format('d');?></span>  
         </a>
+
         <div class="event-summary__content">
           <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
             

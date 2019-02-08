@@ -132,6 +132,7 @@ As default these programs open in single.php
 
 ** CREATING RELATIONSHIP between programs and events..
 ACF Relationship is not working, there is a bug in the plugin..
+Bug fixed, now the relationship is working
 
 
 ** PROFESSORS *******************
@@ -139,6 +140,32 @@ I created in university-post-type.php the post tupe PROFESSORS and some professo
 As default these programs open in single.php then I created 
 
 * Associate a image to all professors..
+I uploaded a few images into editor as a thumbnail in respective professors and in my code editor
+I get them for eatch one of professors and apply some design to fit the size and a simple animation..
+
+=> I´m goins to work on the recizing of these images..
+.. in functions.php i create a code:
+    "add_image_size('professorLandscape', 400, 260, true);"
+    1- Nickname
+    2- pixels wide (width)
+    3- pixels tall (height)
+    4- true -> crop image
+=> Install a Regenerate Thumbnail Plugin to regenerate all images to fit into there new sizes..
+=> Install a Plugin to Crop the Images the way I want.. "Manual Image Crop  -  Tomasz Sita "
+
+
+** Page Banner and Background Image Dynamic *******************
+1- Diferent subtitle for eatch page
+2- Different image for eatch page.
+
+I created a Custom Field with two fields: Subtitle and Image.
+** In location rules (custom field) I used two rules..
+a) Post Type - is equal - Post 
+            or
+a) Post Type - is not equal - Post
+This will make that the fields shows in every single post and page..
+
+
 
 
 
