@@ -1,6 +1,12 @@
 
 *************************** IMPORTANT IFORMATION TO FUTURES PROJECTS *********************************
 
+** IMPORTANT **************************************************************************************
+*the functions.php does not like comments, comments in functions cause a bug in ACF plugin and in *
+*Thumbnails functions also!!  So, avoid to write comments in functions..                          *
+*                                                                                                 *
+***************************************************************************************************
+
 ** Create a Blog Page and a Home Page in wordpress editor, after that go to Setting - Reading Settings and
 select a static_page : HommePage = Home and PostPage = Blog.
 * Create a new page called front-page.php and copy the my frontpage code into it.
@@ -133,6 +139,8 @@ I created in university-post-type.php the post tupe PROFESSORS and some professo
 As default these programs open in single.php then I created 
 
 * Associate a image to all professors..
+
+
 
 
 
