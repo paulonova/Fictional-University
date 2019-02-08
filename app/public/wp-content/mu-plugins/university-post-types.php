@@ -1,15 +1,11 @@
 <?php
 
-
-/**CREATING NEW POST TYPES */
-
-function university_post_types(){
-
-  //Create EVENT post type
+function university_post_types() {
+  // Event Post type
   register_post_type('event', array(
     'supports' => array('title', 'editor', 'excerpt'),
-    'has_archive' => true,  /** to suport archives, allEvents */
     'rewrite' => array('slug' => 'events'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'Events',
@@ -21,11 +17,11 @@ function university_post_types(){
     'menu_icon' => 'dashicons-calendar'
   ));
 
-  //Create PROGRAM post type
+  // Program Post Type
   register_post_type('program', array(
     'supports' => array('title', 'editor'),
-    'has_archive' => true,  /** to suport archives, allprograms */
     'rewrite' => array('slug' => 'programs'),
+    'has_archive' => true,
     'public' => true,
     'labels' => array(
       'name' => 'Programs',
@@ -37,7 +33,8 @@ function university_post_types(){
     'menu_icon' => 'dashicons-awards'
   ));
 
-  //Create PROFESSOR post type
+
+  // Professor Post Type
   register_post_type('professor', array(
     'supports' => array('title', 'editor', 'thumbnail'),
     'public' => true,
@@ -50,9 +47,7 @@ function university_post_types(){
     ),
     'menu_icon' => 'dashicons-welcome-learn-more'
   ));
+
 }
+
 add_action('init', 'university_post_types');
-
-
-
-?>
