@@ -122,3 +122,20 @@ I created in university-post-type.php the post tupe PROGRAMS and some programs l
 As default these programs open in single.php
 => To a single program single-program.php was created
 => To all programs archive-program.php was created
+
+
+** CREATING RELATIONSHIP between programs and events..
+ACF Relationship is not working, there is a bug in the plugin..
+
+
+** PROFESSORS *******************
+I created in university-post-type.php the post tupe PROFESSORS and some professors name for testing.
+As default these programs open in single.php then I created 
+
+* Associate a image to all professors..
+
+
+
+
+
+

@@ -20,6 +20,7 @@ add_action('wp_enqueue_scripts', 'university_files');
 /** function to set automatic the page title */
 function university_features(){
   add_theme_support('title-tag');
+  add_theme_support('post-thumbnails'); // Need to add extra info in university-post-type.php
   register_nav_menu('headerMenuLocation', 'Header Menu Location');/**DINAMIC MENU */
   // register_nav_menu('footerLocationOne', 'Footer Location One');/**DINAMIC MENU */
   // register_nav_menu('footerLocationTwo', 'Footer Location Two');/**DINAMIC MENU */
@@ -27,16 +28,17 @@ function university_features(){
 add_action('after_setup_theme', 'university_features');
 
 
-// Handle the event posts!!
+// Handle the post types!!
 function university_adjust_queries($query){
   
+  //Manipulating Program post type
   if(!is_admin() && is_post_type_archive('program') && $query->is_main_query()){
     $query->set('orderby', 'title');
     $query->set('order', 'ASC');
-    $query->set('post_per_page', -1);
+    $query->set('post_per_page', -1); // show not only 10 last posts, but all posts..
   }
 
-
+  //Manipulating Event post type
   if(!is_admin() && is_post_type_archive('event') && $query->is_main_query()){
     $today = date('Ymd');
     $query->set('meta_key', 'event_date');
