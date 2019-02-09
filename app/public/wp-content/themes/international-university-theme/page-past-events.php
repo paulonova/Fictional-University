@@ -2,15 +2,11 @@
 
 <?php get_header();?>
 
-  <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg')?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title">Past Events</h1>
-      <div class="page-banner__intro">
-        <p>A recap of our past events</p>
-      </div>
-    </div>  
-  </div>
+  <?php pageBanner(array(
+    'title' => 'Past Events',
+    'subtitle' => 'A recap of our past events',
+    'photo' => 'https://cdn.pixabay.com/photo/2015/03/30/19/27/time-699965_960_720.jpg'
+  ))?> 
 
   <div class="container container--narrow page-section">
 

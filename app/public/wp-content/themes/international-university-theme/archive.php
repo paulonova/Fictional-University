@@ -1,19 +1,15 @@
-<!-- This page handle the Blog page showing few posts -->
+<!-- This page handle the Categories page as author and awards -->
 
 
 <?php get_header();?>
 
-  <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg')?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title">
-        <?php the_archive_title(); ?>  <!-- new wordpress function that take care of everything.. -->
-      </h1>
-      <div class="page-banner__intro">
-        <p><?php the_archive_description();?></p>
-      </div>
-    </div>  
-  </div>
+<?php pageBanner(array(
+    'title' => get_the_archive_title(),
+    'subtitle' => get_the_archive_description(),
+    'photo' => 'https://cdn.pixabay.com/photo/2017/03/07/13/02/thought-2123971_960_720.jpg'
+  ))?>
+
+  
 
   <div class="container container--narrow page-section">
     <?php while(have_posts()): ?>

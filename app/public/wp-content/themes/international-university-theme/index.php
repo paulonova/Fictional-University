@@ -1,17 +1,13 @@
-<!-- This page handle the Blog page showing few posts -->
+<!-- This page handle the Blog page section showing few posts -->
 
 
 <?php get_header();?>
 
-  <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg')?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title">Welcome to our Blog!</h1>
-      <div class="page-banner__intro">
-        <p>Keep up with our latest news.</p>
-      </div>
-    </div>  
-  </div>
+<?php pageBanner(array(
+    'title' => 'Welcome to our Blog!',
+    'subtitle' => 'Keep up with our latest news.',
+    'photo' => 'https://cdn.pixabay.com/photo/2016/11/18/13/30/letters-1834501_960_720.jpg'
+  ))?>  
 
   <div class="container container--narrow page-section">
     <?php while(have_posts()): ?>

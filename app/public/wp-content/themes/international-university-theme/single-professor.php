@@ -7,7 +7,9 @@
 <?php the_post(); ?>
 
   <!-- Function is in functions.php -->
-  <?php pageBanner();?>
+  <?php pageBanner(array(
+    'title' => get_the_title()
+  ))?> 
 
   <div class="container container--narrow page-section">
     

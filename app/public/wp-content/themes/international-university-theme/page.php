@@ -5,8 +5,8 @@
 
     <!-- Function is in functions.php -->
     <?php pageBanner(array(
-      'title' => 'Hello this is the title',
-      'subtitle' => 'Hi this is a subtitle',
+      'title' => get_the_title(),
+      'subtitle' => get_field('page_banner_subtitle'),
       'photo' => 'http://ecarecareers.com.au/wp-content/uploads/2017/02/ecare-aboutus-bkg2.jpg'
     ));?>
 

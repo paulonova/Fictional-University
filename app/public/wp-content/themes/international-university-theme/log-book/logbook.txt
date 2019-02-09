@@ -178,6 +178,11 @@ This will make that the fields shows in every single post and page..
 
  'pageBanner($args = NULL)' mens that I can pass a function without any parameter that it won´t crash
 
+Setting the background banner in all pages, the sequence is:
+- 'first:' Check if there is an image uri in 'pageBanner()' function.
+- 'Second:' Check if there is an image in 'wordpress editor ACF'
+- 'Third:' Set the default image in '/images' folder.
+
 
 
 

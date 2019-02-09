@@ -18,6 +18,7 @@
     <?php endif;?>
   <?php endif;?>
 
+
   <div class="page-banner">
     <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo'];?>);"></div>
     <div class="page-banner__content container container--narrow">
@@ -29,9 +30,6 @@
   </div>
 
 <?php } ?>
-
-
-
 
 <?php
 
