@@ -1,3 +1,38 @@
+
+<?php // Function to reduce code - ?>
+<?php function pageBanner($args = NULL){ ?>
+
+  <?php if(!$args['title']):?>
+    <?php $args['title'] = get_the_title();?>
+  <?php endif;?>
+
+  <?php if(!$args['subtitle']):?>
+    <?php $args['subtitle'] = get_field('page_banner_subtitle');?>
+  <?php endif;?>
+
+  <?php if(!$args['photo']):?>
+    <?php if(get_field('page_banner_background_image')):?>
+      <?php $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];?>
+    <?php else:?>
+      <?php $args['photo'] = get_theme_file_uri('./images/ocean.jpg')?>
+    <?php endif;?>
+  <?php endif;?>
+
+  <div class="page-banner">
+    <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo'];?>);"></div>
+    <div class="page-banner__content container container--narrow">
+      <h1 class="page-banner__title"><?php echo $args['title'] ?></h1>
+      <div class="page-banner__intro">
+        <p><?php echo $args['subtitle'];?></p>
+      </div>
+    </div>  
+  </div>
+
+<?php } ?>
+
+
+
+
 <?php
 
 function university_files() {

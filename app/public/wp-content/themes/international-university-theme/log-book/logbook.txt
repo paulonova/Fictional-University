@@ -1,13 +1,13 @@
 
 *************************** IMPORTANT IFORMATION TO FUTURES PROJECTS *********************************
 
-** IMPORTANT **************************************************************************************
+** 'IMPORTANT' **************************************************************************************
 *the functions.php does not like comments, comments in functions cause a bug in ACF plugin and in *
 *Thumbnails functions also!!  So, avoid to write comments in functions..                          *
 *                                                                                                 *
 ***************************************************************************************************
 
-** Create a Blog Page and a Home Page in wordpress editor, after that go to Setting - Reading Settings and
+** 'Create a Blog Page and a Home Page in wordpress editor', after that go to Setting - Reading Settings and
 select a static_page : HommePage = Home and PostPage = Blog.
 * Create a new page called front-page.php and copy the my frontpage code into it.
 * Create index.php or delete its content to be used as blog-page.
@@ -18,7 +18,7 @@ select a static_page : HommePage = Home and PostPage = Blog.
 <?php if(is_page('about-us') || wp_get_post_parent_id(get_the_ID()) == 28) echo 'class="current-menu-item"'?>
 
 
-**CREATING POSTS AND STYLING IT..
+**'CREATING POSTS AND STYLING IT..'
 In index.php:
 
 <?php the_author_posts_link();?>  Show the author name, I can change it in wordpress editor Users, Your Profine 
@@ -27,7 +27,7 @@ and change the Nickname and Display name publicly as ..
 <?php echo get_the_category_list('HERE');?>  is a post have a multiple categories, wherever I put in HERE 
 will separate the catgories name. ex: , / - 
 
-**BLOG CONSTRUCTION
+**'BLOG CONSTRUCTION'
 
 * I used the same layout from page.php
 
@@ -49,7 +49,7 @@ will separate the catgories name. ex: , / -
       ... there is more in codex site...
     ));
 
-  IMPORTANT: Right after the ending of while loop using WP_Query, I need to reset the data buffer writing 
+  'IMPORTANT': Right after the ending of while loop using WP_Query, I need to reset the data buffer writing 
   the function <?php wp_reset_postdata();?>
 
   * set some links to go to blog page using <?php echo site_url('/blog');?>
@@ -57,12 +57,12 @@ will separate the catgories name. ex: , / -
   ** In Wordpress everything comes in form of pages or posts, page = post_type('page') and post = post_type('post')..
 
 
-  ** GULP *********************************
+  ** 'GULP' *********************************
   https://github.com/LearnWebCode/Vagrant-lamp
   Installed gulp i root project, but doesn´t work so well when deploy SASS files..
 
   
-  **CREATING A POST TYPE *******************
+  **'CREATING A POST TYPE' *******************
 
   => To create my Post Types, I will create first a folder (Must Use Plugins) that in wordpress is a special place that user or admin cannot 
   disable by accident, it´s ALWAYS ON. More informations https://codex.wordpress.org/Must_Use_Plugins
@@ -73,10 +73,10 @@ will separate the catgories name. ex: , / -
   1- Inside of wp-content, I create a new folder mu-plugins and inside create a file (name doesn´t mather) that will
   content my post types ..
 
-  I create an EVENT post type in university_post_type.php and now on I can create many more using the same code.
+  I create an EVENT post type in university_post_type.php and from now I can create many more using the same code.
 
 
-  **CREATING A CUSTOM FIELDS *******************
+  **'CREATING A CUSTOM FIELDS' *******************
 
   * To create a custom filed without plugin, I need to write some code in university_post_type.php 
     ex: 'supports' => array('title', 'editor', 'excerpt', 'custom-fields'), that give the support to all
@@ -88,7 +88,7 @@ will separate the catgories name. ex: , / -
 
 
 
-** Ordering (Sorting) Custom Queries *******************
+** 'Ordering (Sorting) Custom Queries' *******************
 
 * META in wordpress is allways the extra or a custom additional data associated to a post, to make the Sorting
 of events rappen by the date-events, i can use meta_value and to use this I need to create another parameter
@@ -117,13 +117,13 @@ archives without create a new WP_Query()..
 && $query->is_main_query()) 'if I am really in /event slug'
 
 
-** PAST EVENTS *******************
+** 'PAST EVENTS' *******************
 * Create a page call page-past-event.php to show all my past events, (event-date != today date)..
 * Pagination required a special job in it..
 
 
 
-** PROGRAMS *******************
+** 'PROGRAMS' *******************
 I created in university-post-type.php the post tupe PROGRAMS and some programs like math, biology and english for testing.
 As default these programs open in single.php
 => To a single program single-program.php was created
@@ -135,7 +135,7 @@ ACF Relationship is not working, there is a bug in the plugin..
 Bug fixed, now the relationship is working
 
 
-** PROFESSORS *******************
+** 'PROFESSORS' *******************
 I created in university-post-type.php the post tupe PROFESSORS and some professors name for testing.
 As default these programs open in single.php then I created 
 
@@ -167,8 +167,16 @@ This will make that the fields shows in every single post and page..
 
 
 
+** 'REDUCING CODE' *******************
 
+ => I created a function caled 'pageBanner()' with codes to provide:
+ 1- title
+ 2- subtitle
+ 3- Background image from internet as an option
+ ** I´m also provided a code to set a standard image in case user dont provide an web photo.
+ * In general, I have 3 'sources of image', 1- from 'URI', 2- from '/image folder' and 3- from 'wordpress editor ACF'
 
+ 'pageBanner($args = NULL)' mens that I can pass a function without any parameter that it won´t crash
 
 
 
