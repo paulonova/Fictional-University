@@ -51,7 +51,6 @@
                 <span class="professor-card__name"><?php the_title(); ?></span>
               </a>
             </li>
-          <!-- </div> -->
           <?php endwhile;?>
         </ul>
 
@@ -87,44 +86,32 @@
       ));
     ?>
 
-    <?php wp_reset_postdata();?>
+    <?php //wp_reset_postdata();?>
 
     <?php if($homePageEvents->have_posts()):?>
       <hr class="section-break"/>
       <h2 class="headline headline--medium">Upcoming <?php echo get_the_title();?> Events</h2>
 
       <?php while($homePageEvents -> have_posts()):?>
-      <?php $homePageEvents -> the_post();?>
-        
-      <div class="event-summary">
-        <a class="event-summary__date t-center" href="<?php the_permalink();?>">
-          <span class="event-summary__month"><?php 
-            $eventDate = new DateTime(get_field('event_date', false, false)); // Need to have false, false..
-            echo $eventDate->format('M');
-          ?></span>
-          <span class="event-summary__day"><?php echo $eventDate->format('d');?></span>  
-        </a>
-
-        <div class="event-summary__content">
-          <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
-            
-            <!-- Check if there is excerpt or not -->
-            <p><?php if(has_excerpt()):?>
-                <?php echo get_the_excerpt() . '...';?>
-              <?php else:?>
-                <?php echo wp_trim_words( get_the_content(), 18, '...' );?>
-              <?php endif;?>
-              <a href="<?php the_permalink();?>" class="nu gray">Read more</a>
-            </p>
-
-        </div>
-      </div>
+        <?php $homePageEvents -> the_post();?>
+        <?php get_template_part('template-parts/content', 'event')?> <!-- the same as content-event.php  -->
       <?php endwhile;?>
-
-    <?php else:?>
-      <hr class="section-break"/>
-      <h4 class="headline headline--small">No Events related to <?php echo get_the_title();?></h4>
     <?php endif;?>
+
+    <?php wp_reset_postdata();?>
+
+    <?php $relatedCampuses = get_field('related_campus')?>
+      <?php if($relatedCampuses):?>
+        <hr class="section-break"/>
+        <h2 class="headline headline--medium"><?php echo get_the_title();?> is Available at these Campuses</h2>
+
+        <ul class="min-list link-list">
+          <?php foreach($relatedCampuses as $campus): ?>
+            <li><a href="<?php echo get_the_permalink($campus);?>"><?php echo get_the_title($campus) ?></a></li>
+          <?php endforeach; ?>
+        </ul>
+        
+      <?php endif;?>
   
   </div>
 
