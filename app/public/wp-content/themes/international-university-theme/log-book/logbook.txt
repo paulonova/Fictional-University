@@ -220,5 +220,24 @@ all marks will be seen in the map att once.
 ** 'LIVE SEARCH RESULT' *******************
 Live => Meas real time response with a cuple sugestions..
 1- I create a javascript file named Search.js and a class Search.
-2- Open and Close search overlay
-3- 
+2- Open and Close search overlay using 'jQuery'
+3- Disable the scroll when overlay and able again when close overlay
+4- Shortcut to open and close overlay - 's' to search and 'esc' to close
+5- I created a function 'keyPressDispatcher(event)' and inside I get the KeyCode from 
+the letter s and asc. (83 and 27) and then use it to open and close the oveerlay..
+
+obs: 'keyup' -> fires just once when I leave the button and 
+     'keydown' fires continium until I press the buttom, stops only when I release the btn.
+
+in 'keyPressDispatcher()' function in Search.js this condition:
+      
+    if (event.keyCode == 83 && !this.isOverlayOpen && !$('input, textarea').is(':focus'))
+means:
+1. the key is 'S'
+2. If the overlay is not open
+3. I can press esc when I´m in any other input or textarea field the it will not close the overlay..
+
+
+** 'Load WP Content with JS' *******************
+
+

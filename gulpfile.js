@@ -13,7 +13,7 @@ colorFunctions = require('postcss-color-function');
 
 
 gulp.task('styles', function() {
-  return gulp.src(settings.themeLocation + 'css/style.css')
+  return gulp.src(settings.themeLocation + 'css/style.scss')
     .pipe(postcss([cssImport, mixins, cssvars, nested, rgba, colorFunctions, autoprefixer]))
     .on('error', (error) => console.log(error.toString()))
     .pipe(gulp.dest(settings.themeLocation));
@@ -40,7 +40,7 @@ gulp.task('watch', function() {
   gulp.watch('./**/*.php', function() {
     browserSync.reload();
   });
-  gulp.watch(settings.themeLocation + 'css/**/*.css', gulp.parallel('waitForStyles'));
+  gulp.watch(settings.themeLocation + 'css/**/*.scss', gulp.parallel('waitForStyles'));
   gulp.watch([settings.themeLocation + 'js/modules/*.js', settings.themeLocation + 'js/scripts.js'], gulp.parallel('waitForScripts'));
 });
 
