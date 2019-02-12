@@ -47,8 +47,20 @@ class Search {
   }
 
   getReaults(){
-    this.resultsDiv.html("Imagine some results here..");
-    this.isSpinnerVisible = false;
+    // the rest of url is defined in functions.php
+    $.getJSON(universityData.root_url + '/wp-json/wp/v2/posts/?search=' + this.searchField.val(), (posts)=>{
+      console.log("URL ==> " + universityData.root_url);
+      
+      this.resultsDiv.html(`
+        <h2 class="search-overlay__section-title">General Information</h2>
+        ${posts.length ? '<ul class="min-list link-list">' : '<p>No general information matches this search</p>'}
+          ${posts.map(item => `
+            <li><a href="${item.link}">${item.title.rendered}</a></li>
+          `).join('')}
+        ${posts.lenght ? '</ul>' : ''}
+      `);
+      this.isSpinnerVisible = false;
+    });
   }
 
 

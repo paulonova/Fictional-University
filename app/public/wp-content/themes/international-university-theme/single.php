@@ -9,7 +9,7 @@
   <!-- Function is in functions.php -->
   <?php pageBanner(array(
     'title' => get_the_title(),
-    'photo' => 'https://cdn.pixabay.com/photo/2018/03/22/02/37/email-3249062_960_720.png'
+    'photo' => 'https://cdn.pixabay.com/photo/2014/08/27/08/11/blogging-428955_960_720.jpg'
   ))?> 
 
   <div class="container container--narrow page-section">

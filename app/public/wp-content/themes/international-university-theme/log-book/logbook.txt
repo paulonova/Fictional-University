@@ -218,6 +218,7 @@ all marks will be seen in the map att once.
 
 
 ** 'LIVE SEARCH RESULT' *******************
+
 Live => Meas real time response with a cuple sugestions..
 1- I create a javascript file named Search.js and a class Search.
 2- Open and Close search overlay using 'jQuery'
@@ -240,4 +241,30 @@ means:
 
 ** 'Load WP Content with JS' *******************
 
+=> http://localhost:3000/wp-json/wp/v2/posts shows me a list of post objects in JSON format.
+=> http://localhost:3000/wp-json/wp/v2/posts/?search= is the URL used to search inside the post..
+**/post can be /page or something else..
+
+I used jQuery to handle 'Wordpress Rest API'
+                           'The URL'                                   'Function I want to run after'
+    $.getJSON('http://localhost:3000/wp-json/wp/v2/posts/?search=' + this.searchField.val(), (posts)=>{
+      alert(posts[0].title.rendered);
+    });
+  }
+
+IMPORTANT => I can generate HTML between javascript using `<h2>something here ${insert something here}</h2>` 
+I Generate HTML Based on JSON
+
+"GET URL ROOT IN JAVASCRIPT"
+In order to make the url more dinamic, I create in functions.php In 'university_files()' set:
+**ps: Function need to be in the bottom...
+
+    wp_localize_script('main-university-js', 'universityData', array(
+        'root_url' => get_site_url()
+      ));
+
+
+. 'main-university-js' => Means, the name of the javascript file i use to be flexible (scripts-bundled.js)
+. 'universityData' => Means, a variable name (name does not matter).
+. 'array()' => array of data that I want to be available in Javascript..
 
