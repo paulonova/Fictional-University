@@ -21,4 +21,7 @@ INSERT INTO `wp_usermeta` VALUES
 (17,1,"wp_dashboard_quick_press_last_post_id","4"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse"),
-(20,1,"wp_user-settings-time","1549617850");
+(20,1,"wp_user-settings-time","1549617850"),
+(21,1,"closedpostboxes_post","a:0:{}"),
+(22,1,"metaboxhidden_post","a:0:{}"),
+(23,1,"meta-box-order_post","a:4:{s:15:\"acf_after_title\";s:0:\"\";s:6:\"normal\";s:23:\"acf-group_5c5d9979a415f\";s:4:\"side\";s:0:\"\";s:8:\"advanced\";s:0:\"\";}");

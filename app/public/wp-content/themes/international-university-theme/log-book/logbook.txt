@@ -252,7 +252,7 @@ I used jQuery to handle 'Wordpress Rest API'
     });
   }
 
-IMPORTANT => I can generate HTML between javascript using `<h2>something here ${insert something here}</h2>` 
+'IMPORTANT' => I can generate HTML between javascript using `<h2>something here ${insert something here}</h2>` 
 I Generate HTML Based on JSON
 
 "GET URL ROOT IN JAVASCRIPT"
@@ -268,3 +268,16 @@ In order to make the url more dinamic, I create in functions.php In 'university_
 . 'universityData' => Means, a variable name (name does not matter).
 . 'array()' => array of data that I want to be available in Javascript..
 
+
+** 'Fixing some details in search function' *******************
+
+1- Move the overlay html code from the footer to Search.js
+2- Set search timer for 750 miliseconds.
+3- setTimeout(() => this.searchField.focus(), 301);  make the cursor work when I start the search..
+4- Create another jquery getJSON to search into pages.. (Synchronous)
+
+
+
+** 'Creating ASYNCHRONOUS request' *************************
+
+Creaate a '$when()' function that will runs any JSON requests..
