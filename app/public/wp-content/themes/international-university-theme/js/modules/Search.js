@@ -43,11 +43,11 @@ class Search {
         this.isSpinnerVisible = false;
       }        
     }
-    this.previousValue = this.searchField.val();
+    this.previousValue = this.searchField.val(); 
   }
 
   getReaults(){
-    // the rest of url is defined in functions.php
+    // the rest of url is defined in functions.php - authorName created in functions.php
     $.when(
       $.getJSON(universityData.root_url + '/wp-json/wp/v2/posts/?search=' + this.searchField.val()), 
       $.getJSON(universityData.root_url + '/wp-json/wp/v2/pages/?search=' + this.searchField.val()))
@@ -57,7 +57,7 @@ class Search {
           <h2 class="search-overlay__section-title">General Information</h2>
           ${combineResults.length ? '<ul class="min-list link-list">' : '<p>No general information matches this search</p>'}
             ${combineResults.map(item => `
-              <li><a href="${item.link}">${item.title.rendered}</a></li>
+              <li><a href="${item.link}">${item.title.rendered}</a>${item.type == 'post' ? ' by ' + item.authorName : '' }</li> 
             `).join('')}
           ${combineResults.lenght ? '</ul>' : ''}
         `);

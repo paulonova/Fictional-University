@@ -280,4 +280,31 @@ In order to make the url more dinamic, I create in functions.php In 'university_
 
 ** 'Creating ASYNCHRONOUS request' *************************
 
-Creaate a '$when()' function that will runs any JSON requests..
+Create a '$when()' function that will runs any JSON requests..
+'.then((posts, pages) => {})' arrays that contains the request results to be used by javascript.
+
+
+Insert 'authorName' field in JSON using wordpress code in functions.php and then use it in search functions
+to display the name of the author..
+
+**************************************************************************************
+** 'REST API: Add New Custom Route (URL)' ********************************************
+**************************************************************************************
+
+Why Create a new REST API URL:
+1- I can create my own Custom Search Logic
+2- Respond with less JSON data (load faster)
+3- Send only 1 getJSON request instead of 6 in our JS.
+4- Perfect exercising for sharpening PHP skills.
+
+in search-rout.php I create a function that runs register_rest_rout('name space/version', 'rout', array());
+
+ex: http://localhost:3000/wp-json/wp/v2/posts
+'name space' = wp/v2
+'rout' = posts  (whatever comes in the end)
+array(                   '*describe what rappen when someone visit this url'
+  GET,
+  FUNCTION               'that will handle the Json response..'
+)
+
+
