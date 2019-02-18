@@ -1,4 +1,4 @@
-<!-- 
+<?php
 /** THIS PAGE -- WARNING!! 
      * This page is to demonstrate how to create a DINAMIC MENU created in wordpress Editor
      * Steps:
@@ -9,7 +9,7 @@
      * 5- select Display Locaation []
      * 
     */
- -->
+  ?>
 
 
 <!DOCTYPE html>

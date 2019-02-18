@@ -9,7 +9,7 @@
   <!-- Function is in functions.php -->
   <?php pageBanner(array(
     'title' => get_the_title(),
-    'photo' => 'https://cdn.pixabay.com/photo/2016/11/08/12/19/university-of-iowa-1808151_960_720.jpg'
+    'photo' => get_theme_file_uri('images/campus-solna.jpg')
   ))?> 
 
   <div class="container container--narrow page-section">

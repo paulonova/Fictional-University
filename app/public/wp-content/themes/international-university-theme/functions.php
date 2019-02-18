@@ -69,7 +69,7 @@ function university_features() {
   add_image_size('pageBanner', 1500, 350, true);
 }
 add_action('after_setup_theme', 'university_features');
-
+ 
 
 
 function university_adjust_queries($query) {

@@ -309,3 +309,19 @@ array(                   '*describe what rappen when someone visit this url'
 
 
 ** Search Logic That's Aware of Relationships ************************************
+
+I create a new WP_Query and a while loop to search to professors..
+
+
+** 'TO AVOID DUPLICATED RESULTS':
+$results['professors'] = array_values(array_unique($results['professors'], SORT_REGULAR));
+'array_values' Return all the values of an array (not the keys)
+'array_unique' removes duplicate values from an array
+'SORT_REGULAR' Compare items normally
+
+PS: In search function, I want to include the content only fron Posts and Pages, nothing else, for that,
+I will need to create another Custom Field that will contain the contents from programs, professor etc..
+
+
+
+
