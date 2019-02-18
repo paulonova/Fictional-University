@@ -58,8 +58,8 @@ function university_files() {
     'root_url' => get_site_url()
   ));
 }
-
 add_action('wp_enqueue_scripts', 'university_files');
+
 
 function university_features() {
   add_theme_support('title-tag');
@@ -68,8 +68,9 @@ function university_features() {
   add_image_size('professorPortrait', 480, 650, true); 
   add_image_size('pageBanner', 1500, 350, true);
 }
-
 add_action('after_setup_theme', 'university_features');
+
+
 
 function university_adjust_queries($query) {
 
@@ -108,7 +109,6 @@ function universityMapKey( $api ){
 	$api['key'] = 'AIzaSyAxZnrwQqmucz6dcnliwoDJsdkNsHOmAAc';	
 	return $api;	
 }
-
 add_filter('acf/fields/google_map/api', 'universityMapKey');
 
 
