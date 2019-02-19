@@ -8,7 +8,8 @@
 
   <!-- Function is in functions.php -->
   <?php pageBanner(array(
-    'title' => get_the_title()
+    'title' => get_the_title(),
+    'photo' => 'https://cdn.pixabay.com/photo/2014/09/07/21/50/library-438389__340.jpg'
   ))?> 
 
   <div class="container container--narrow page-section">

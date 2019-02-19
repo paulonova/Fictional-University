@@ -6,7 +6,7 @@
 <?php pageBanner(array(
     'title' => 'Welcome to our Blog!',
     'subtitle' => 'Keep up with our latest news.',
-    'photo' => 'https://cdn.pixabay.com/photo/2014/08/27/08/11/blogging-428955_960_720.jpg'
+    'photo' => 'https://cdn.pixabay.com/photo/2016/02/06/09/56/science-1182713__340.jpg'
   ))?>  
 
   <div class="container container--narrow page-section">

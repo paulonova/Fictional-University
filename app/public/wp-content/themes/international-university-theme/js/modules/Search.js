@@ -136,6 +136,7 @@ class Search {
     setTimeout(() => this.searchField.focus(), 301); // set focus in input field search..
     console.log('OPEN');    
     this.isOverlayOpen = true;
+    return false;  // will prevent the default behaveur of <a></a> element
   }
 
   closeOverlay(){

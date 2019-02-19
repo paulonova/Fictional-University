@@ -5,7 +5,7 @@
 <?php pageBanner(array(
     'title' => 'Our Campuses',
     'subtitle' => get_field('page_banner_subtitle'),
-    'photo' => 'https://cdn.pixabay.com/photo/2017/08/25/06/54/street-map-2679271_960_720.jpg'
+    'photo' => 'https://cdn.pixabay.com/photo/2017/05/15/01/02/travel-2313444__340.jpg'
   ))?>
 
   <div class="container container--narrow page-section">

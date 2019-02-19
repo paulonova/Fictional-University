@@ -322,6 +322,20 @@ $results['professors'] = array_values(array_unique($results['professors'], SORT_
 PS: In search function, I want to include the content only fron Posts and Pages, nothing else, for that,
 I will need to create another Custom Field that will contain the contents from programs, professor etc..
 
+***********************************************************************************************************
+***********************************************************************************************************
+****************************************** FINISH *********************************************************
+***********************************************************************************************************
 
 
+EXTRA:
 
+** 'TRADITIONAL WORDPRESS SEARCHING' *******************
+
+Create a new page in editor named Search and a php file named page-search.php 
+Create a form that will use 'action="<?php echo esc_url(site_url('/')); ?>"' to redirect the browse to the root site http://localhost:3000/
+It is a way to make the browse use the traditional search http://localhost:3000/?s=textToSearch and display the results in search.php file
+
+Extra file for FORM:
+
+New file searchform.php (name is important) and use the function '<?php get_search_form()?>' and wordpress will get the form for me.
