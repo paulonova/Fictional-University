@@ -49,7 +49,7 @@ INSERT INTO `wp_postmeta` VALUES
 (47,20,"_edit_last","1"),
 (48,20,"_edit_lock","1550502024:1"),
 (49,21,"_edit_last","1"),
-(50,21,"_edit_lock","1550509633:1"),
+(50,21,"_edit_lock","1550573765:1"),
 (59,1,"_edit_lock","1549618953:1"),
 (60,26,"_wp_attached_file","2019/02/barksalot-3.jpg"),
 (61,26,"_wp_attachment_metadata","a:5:{s:5:\"width\";i:6000;s:6:\"height\";i:4000;s:4:\"file\";s:23:\"2019/02/barksalot-3.jpg\";s:5:\"sizes\";a:6:{s:18:\"professorLandscape\";a:4:{s:4:\"file\";s:23:\"barksalot-3-400x260.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:260;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:17:\"professorPortrait\";a:4:{s:4:\"file\";s:23:\"barksalot-3-480x650.jpg\";s:5:\"width\";i:480;s:6:\"height\";i:650;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:23:\"barksalot-3-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:23:\"barksalot-3-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:23:\"barksalot-3-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:24:\"barksalot-3-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}"),

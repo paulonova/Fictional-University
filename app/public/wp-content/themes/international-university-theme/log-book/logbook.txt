@@ -339,3 +339,24 @@ It is a way to make the browse use the traditional search http://localhost:3000/
 Extra file for FORM:
 
 New file searchform.php (name is important) and use the function '<?php get_search_form()?>' and wordpress will get the form for me.
+
+
+** 'USER ROLES AND PERMISSIONS' *************************
+
+1- Create a newe User Account.
+
+*Subscriber:    'Can do nothing, only manage own profile'
+*Contributor:   'Can create a page and post but can´t publish it to world wide.'
+*Author:        'Able to create a assign own posts and publish it online. cannot change others content'
+*Editor:        'Can change others publishings and contents, even edit and delete posts and pages'
+*Administtrator:'Full complete access to do everithing'
+
+I can create a new 'Custom Role' installing a plugin 'Members' By Justin Tadlock.
+
+Now I can add a role to the new user, but first I need to create a permission in the place that I created the 'Post Types',
+the university-post-types.php using:
+
+'capability_type' => 'event',
+'map_meta_cap' => true,
+
+This code will provide make available the permissions to the Event Post Type.
