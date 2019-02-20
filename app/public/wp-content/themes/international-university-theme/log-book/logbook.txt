@@ -360,3 +360,19 @@ the university-post-types.php using:
 'map_meta_cap' => true,
 
 This code will provide make available the permissions to the Event Post Type.
+
+
+** 'OPEN REGISTRATIONS' *************************
+
+In General Settings set up the "anyone can register"  and specify the role to 'Subscriber'.
+In the browser, write after the homepage url '/wp-signup.php' and sign a new member..
+
+'Redirect Function' **
+->  wp_redirect(site_url('/')); ->  Handle the redirection of all users with role 'subscriber' out from AdminPage onto homepage..
+Code is in functions.php
+
+** 'Hide Admin Bar from users' ***********************
+-> show_admin_bar(false);  Hide the AdminBar from all users with role 'subscriber' and show to Administrators.
+
+
+
