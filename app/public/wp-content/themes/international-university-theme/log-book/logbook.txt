@@ -376,3 +376,12 @@ Code is in functions.php
 
 
 
+***********************************************************************************************************
+******************************** CREATE NOTES *************************************************************
+
+1- Create a new page call My Notes (my-notes)
+2- Create a file call page-my-notes.php to handle the page.
+3- Create a Post Type in university-post-types.php
+4- Set 'subscriber' roles to access the Note.
+
+
