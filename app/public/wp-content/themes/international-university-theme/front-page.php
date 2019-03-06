@@ -17,7 +17,7 @@
         <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
 
         <?php 
-        $today = date('Ymd');
+          $today = date('Ymd');
           $homePageEvents = new WP_Query(array(
             'posts_per_page' => 2,  // -1 means to get all posts from these post type..
             'post_type' => 'event',

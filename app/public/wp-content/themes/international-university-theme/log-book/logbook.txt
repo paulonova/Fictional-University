@@ -385,3 +385,18 @@ Code is in functions.php
 4- Set 'subscriber' roles to access the Note.
 
 
+** DELETE
+* I create a Javascript file MyNotes.js where I create all methods to handle the CRUD.
+  - It Needs to set a 'nonce' in functions.publish
+    wp_localize_script('main-university-js', 'universityData', array(
+                        'root_url' => get_site_url(), 
+                        'nonce' => wp_create_nonce('wp_rest'))
+                        );
+
+in <li> I set data-id="<?php the_ID();?>" that will set the ID for every notes..
+
+Used '$.ajax' to controll what type (GET, POST, DELETE) i want to send.
+'NONCE' is a garantee that I was logged in and have the authorization to delete posts / set in functions.php
+
+** In page-my-notes.js I have between <li> an input field that get title information and show it, thats why I can edit this
+info..  I set the 'readonly' in both <textarea> and <input> to handle this with EDIT button and SAVE button.

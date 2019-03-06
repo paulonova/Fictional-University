@@ -73,12 +73,12 @@ function university_post_types() {
   ));
 
 
-  // Note Post Type
   register_post_type('note', array(
-    'show_in_rest' => true,
+    'show_in_rest' => true, // this has couse some problems to register the Note in the editor, don´t know why???
     'supports' => array('title', 'editor'),
-    'public' => true,
-    'show_ui' => true,
+    'has_archive' => true,
+    'public' => false,
+    'show_ui' => true, //needs to be shown in editor
     'labels' => array(
       'name' => 'Notes',
       'add_new_item' => 'Add New Note',
