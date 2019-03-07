@@ -437,6 +437,9 @@ Path B:
   2- Make a copy of my DB in sql.zip and transfer my database to the host.
   3- Create in local folder, under the 'public file' a file named local.php
   4- In wp-config.php I created an IF ELSE that check if I have this file, if
-    yes then       if not so   
+    yes then set for the LOCAL  if not so set for the ALIVE.
 
+  5- Set .gitignore to avoid local.php
+  6- Git add, commit and push everything to repository.
+  
 
