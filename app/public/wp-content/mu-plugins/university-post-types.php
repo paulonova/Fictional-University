@@ -74,6 +74,9 @@ function university_post_types() {
 
 
   register_post_type('note', array(
+    'capability_type' => 'note', // open to a new permission
+    'map_meta_cap' => true, //inforce and require the permission in right time and place.
+    
     'show_in_rest' => true, // this has couse some problems to register the Note in the editor, don´t know why???
     'supports' => array('title', 'editor'),
     'has_archive' => true,

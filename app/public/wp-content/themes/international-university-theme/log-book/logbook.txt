@@ -400,3 +400,39 @@ Used '$.ajax' to controll what type (GET, POST, DELETE) i want to send.
 
 ** In page-my-notes.js I have between <li> an input field that get title information and show it, thats why I can edit this
 info..  I set the 'readonly' in both <textarea> and <input> to handle this with EDIT button and SAVE button.
+
+PERMOSSIONS:
+
+I create a permission in university-post-types.php with this code:
+    'capability_type' => 'note', // open to a new permission
+    'map_meta_cap' => true, //inforce and require the permission in right time and place.
+
+And in the Editor, I set full permission to 'Admin.' and partial permission to all 'Subscribers'.
+
+Now, i´m going to make the uri more secure for no one can read the posts by uri API-Json.
+
+1- I can do this manually, by the Editor and set all notes as a 'private'.
+2- I can do it programmatically:
+  In MyNotes.js in createNote() method, I set the 'status = private' and that is it.
+
+But I can also 'FORCE note posts to be private' in functions.php.
+  adding a filter and a function that see if post_type == 'note' and != 'trash', and then
+  set the 'post_status' = 'private' and finnally return the data.
+
+DEPLOYING:
+
+Path A:
+  (Plugin) 
+  Very easy, Bundles everything to wordpress, no other knowledge rewuires and 
+  it´s generate for everyone.
+  1- Create a free account in SiteGround.com 
+  2- Set as a Wordpress project.
+  3- install plugin 'all-in-one' in both local and web place.
+  4- Transfer the file that contains everything from my project
+  to the host site, using the same plugin.
+
+Path B:
+  (Advanced Git)
+
+
+

@@ -100,13 +100,12 @@ class MyNotes {
     })
   }
 
-
+  // 'status': 'publish' make the note not a draft, but published..
   createNote(e){
-
     var ourNewPost = {
       'title': $(".new-note-title").val(),
       'content': $(".new-note-body").val(),
-      'status': 'publish'
+      'status': 'private'
     }
     
     $.ajax({
