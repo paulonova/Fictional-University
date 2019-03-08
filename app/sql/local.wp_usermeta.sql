@@ -17,7 +17,6 @@ INSERT INTO `wp_usermeta` VALUES
 (13,1,"wp_user_level","10"),
 (14,1,"dismissed_wp_pointers","wp496_privacy"),
 (15,1,"show_welcome_panel","1"),
-(16,1,"session_tokens","a:2:{s:64:\"6ad40d0bfe7e246052cbe447bb62beb3aa50bfa1416e0c39003f1c485545e87b\";a:4:{s:10:\"expiration\";i:1551891010;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36\";s:5:\"login\";i:1551718210;}s:64:\"08770a0340dd0321a72baba51780b7b7fd52aae7dc884bc198eed0c47012c6a1\";a:4:{s:10:\"expiration\";i:1552035201;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36\";s:5:\"login\";i:1551862401;}}"),
 (17,1,"wp_dashboard_quick_press_last_post_id","108"),
 (18,1,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (19,1,"wp_user-settings","libraryContent=browse&posts_list_mode=list&editor=html"),
@@ -42,4 +41,6 @@ INSERT INTO `wp_usermeta` VALUES
 (56,3,"community-events-location","a:1:{s:2:\"ip\";s:12:\"192.168.95.0\";}"),
 (58,1,"edit_note_per_page","20"),
 (59,1,"closedpostboxes_note","a:1:{i:0;s:10:\"members-cp\";}"),
-(60,1,"metaboxhidden_note","a:0:{}");
+(60,1,"metaboxhidden_note","a:0:{}"),
+(63,1,"session_tokens","a:4:{s:64:\"bdc2796b9f78258ad4c15a148555c9039d46b5d46877377e23cce9370569e14a\";a:4:{s:10:\"expiration\";i:1552124961;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\";s:5:\"login\";i:1551952161;}s:64:\"3efce164e61a0b8e520fa0e8fc343152362caee7fcdef88226c20cf25e9a902b\";a:4:{s:10:\"expiration\";i:1552140929;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\";s:5:\"login\";i:1551968129;}s:64:\"25f69a38eb2409c06e1a45fffa8d3a34735c84ef9ae3522af0aac375bf3bb7c3\";a:4:{s:10:\"expiration\";i:1552140956;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\";s:5:\"login\";i:1551968156;}s:64:\"6baac276065314f439316376cbf2156c05c16805ba1d044348ea4f274d474864\";a:4:{s:10:\"expiration\";i:1552164521;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\";s:5:\"login\";i:1551991721;}}"),
+(64,3,"session_tokens","a:1:{s:64:\"9a276ff44288c9d4050ce2b63541e5a311076a7e7e683d978a7af6eb7d852e50\";a:4:{s:10:\"expiration\";i:1552124980;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36\";s:5:\"login\";i:1551952180;}}");

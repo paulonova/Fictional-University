@@ -9,6 +9,12 @@ require get_theme_file_path('./includes/search-rout.php');
     register_rest_field('post', 'authorName', array(
       'get_callback' => function(){return get_the_author();}  
     ));
+
+    register_rest_field('note', 'userNoteCount', array(
+      'get_callback' => function(){
+        return count_user_posts(get_current_user_id(),'note');
+      }  
+    ));
   }
   add_action('rest_api_init', 'university_custom_rest');
 ?>
@@ -158,11 +164,26 @@ function ourLoginTitle(){
 add_filter('login_headertitle', 'ourLoginTitle');
 
 
-// Force note posts to be PRIVATE.
-function makeNotePrivate($data){
-  if($data['post_type'] == 'note' && $data['post_type'] != 'trash'){
-    $data['post_status'] = 'private';    
+
+function makeNotePrivate($data, $postarr){
+  // Protect from malicious js code in textareas and text inputs...
+  if($data['post_type'] == 'note'){  
+    if(count_user_posts(get_current_user_id(), 'note') > 2 AND !$postarr['ID']) {
+      die("You have reached your note limit.");
+    }
+    $data['post_content'] = sanitize_textarea_field($data['post_content']);
+    $data['post_title'] = sanitize_text_field($data['post_title']);
   }
+
+  // Force note posts to be PRIVATE.
+  // if($data['post_type'] == 'note' && $data['post_type'] != 'trash'){
+  //   $data['post_status'] = 'private';
+  // }
+  //This code make problems with delete/trash functions..
   return $data;
 }
-add_filter('wp_insert_post_data', 'makeNotePrivate');
+
+add_filter('wp_insert_post_data', 'makeNotePrivate', 10, 2); // 2 means two parameters and 10 means the priority to run
+
+
+

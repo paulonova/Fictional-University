@@ -20,20 +20,25 @@
 
 // ** MySQL settings ** //
 
-if(file_exists(dirname(__FILE__) . '/local.php')){
-	//Local database settings
-	define( 'DB_NAME', 'local' );
+// if(file_exists(dirname(__FILE__) . '/local.php')){
+// 	//Local database settings
+// 	define( 'DB_NAME', 'local' );
+// 	define( 'DB_USER', 'root' );
+// 	define( 'DB_PASSWORD', 'root' );
+// 	define( 'DB_HOST', 'localhost' );
+
+// }else{
+// 	//Live database settings
+// 	define( 'DB_NAME', 'paulov12_universitydata' );
+// 	define( 'DB_USER', 'paulov12_wp403' );
+// 	define( 'DB_PASSWORD', 'paulo@1970' );
+// 	define( 'DB_HOST', 'us235.siteground.us' );
+// }
+
+define( 'DB_NAME', 'local' );
 	define( 'DB_USER', 'root' );
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
-
-}else{
-	//Live database settings
-	define( 'DB_NAME', 'paulov12_universitydata' );
-	define( 'DB_USER', 'paulov12_wp403' );
-	define( 'DB_PASSWORD', 'paulo@1970' );
-	define( 'DB_HOST', 'localhost' );
-}
 
 
 

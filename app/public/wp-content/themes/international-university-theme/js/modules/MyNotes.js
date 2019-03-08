@@ -7,11 +7,11 @@ class MyNotes {
   }
 
   events(){
-    /**This lines means that whatever i click inside of '#my-note' <ul>
-     * if the class match with the class .delete-note, or one of the others, 
-     * then it triggs the function this.deleteNote or the others. to work the 
-     * Edit, Delete and Save button when created, without reload the page.
-     */
+    // This lines means that whatever i click inside of '#my-note' <ul>
+    // if the class match with the class .delete-note, or one of the others, 
+    // then it triggs the function this.deleteNote or the others. to work the 
+    // Edit, Delete and Save button when created, without reload the page.
+     
     $("#my-notes").on("click", ".delete-note", this.deleteNote);
     $("#my-notes").on("click", ".edit-note", this.editNote.bind(this));
     $("#my-notes").on("click", ".update-note", this.updateNote.bind(this));
@@ -20,7 +20,6 @@ class MyNotes {
 
   editNote(e){
     var thisNote = $(e.target).parents("li");
-
     if(thisNote.data("state") == "editable"){
       this.makeNoteReadonly(thisNote);
     }else{
@@ -46,29 +45,28 @@ class MyNotes {
     thisNote.data("state", "cancel");
   }
 
-  //Methods  .ajax to controll what type (GET, POST, DELETE) i want to send.
-  /**NONCE is a garantee that I was logged in and have the authorization to delete posts */
-  deleteNote(e){
+  deleteNote(e) {
     var thisNote = $(e.target).parents("li");
-    console.log("LOOK ", thisNote.data('id')); //To get the note id.
-    
+
     $.ajax({
-      beforeSend: (xhr) =>{
-        xhr.setRequestHeader('X-WP-Nonce', universityData.nonce);  //nonce is in functions.php
+      beforeSend: (xhr) => {
+        xhr.setRequestHeader('X-WP-Nonce', universityData.nonce);
       },
       url: universityData.root_url + '/wp-json/wp/v2/note/' + thisNote.data('id'),
       type: 'DELETE',
       success: (response) => {
         thisNote.slideUp();
-        console.log("Congrats..")
-        console.log(response)
+        console.log("Congrats");
+        console.log(response);
+        if (response.userNoteCount < 3) {
+          $(".note-limit-message").removeClass("active");
+        }
       },
-      error: (response) =>{
-        console.log("Sorry..")
-        console.log(response)
-      },
-
-    })
+      error: (response) => {
+        console.log("Sorry");
+        console.log(response);
+      }
+    });
   }
 
   updateNote(e){
@@ -129,12 +127,17 @@ class MyNotes {
         console.log("Congrats..")
         console.log(response)
       },
-      error: (response) =>{
-        console.log("Sorry..")
-        console.log(response)
-      },
+      error: (response) => {
+        
+        if(response.responseText.trim() == "You have reached your note limit.") {
+          $(".note-limit-message").addClass("active");
+        }
+        console.log("Sorry");
+        console.log(response);
+        console.log("ERROR: " + response.responseText.trim());
+      }
 
-    })
+    });
   }
 
 

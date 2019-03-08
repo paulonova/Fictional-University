@@ -17,6 +17,7 @@ select a static_page : HommePage = Home and PostPage = Blog.
 ** This peace of code make the current page link be selected and all it child.
 <?php if(is_page('about-us') || wp_get_post_parent_id(get_the_ID()) == 28) echo 'class="current-menu-item"'?>
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 **'CREATING POSTS AND STYLING IT..'
 In index.php:
@@ -26,6 +27,9 @@ and change the Nickname and Display name publicly as ..
 
 <?php echo get_the_category_list('HERE');?>  is a post have a multiple categories, wherever I put in HERE 
 will separate the catgories name. ex: , / - 
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 **'BLOG CONSTRUCTION'
 
@@ -56,10 +60,14 @@ will separate the catgories name. ex: , / -
 
   ** In Wordpress everything comes in form of pages or posts, page = post_type('page') and post = post_type('post')..
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
   ** 'GULP' *********************************
   https://github.com/LearnWebCode/Vagrant-lamp
   Installed gulp i root project, but doesn´t work so well when deploy SASS files..
+
+
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
   
   **'CREATING A POST TYPE' *******************
@@ -76,6 +84,8 @@ will separate the catgories name. ex: , / -
   I create an EVENT post type in university_post_type.php and from now I can create many more using the same code.
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
   **'CREATING A CUSTOM FIELDS' *******************
 
   * To create a custom filed without plugin, I need to write some code in university_post_type.php 
@@ -87,6 +97,7 @@ will separate the catgories name. ex: , / -
   CMB2 -> Custom Metaboxes 2
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'Ordering (Sorting) Custom Queries' *******************
 
@@ -117,11 +128,13 @@ archives without create a new WP_Query()..
 && $query->is_main_query()) 'if I am really in /event slug'
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ** 'PAST EVENTS' *******************
 * Create a page call page-past-event.php to show all my past events, (event-date != today date)..
 * Pagination required a special job in it..
 
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'PROGRAMS' *******************
 I created in university-post-type.php the post tupe PROGRAMS and some programs like math, biology and english for testing.
@@ -134,6 +147,8 @@ As default these programs open in single.php
 ACF Relationship is not working, there is a bug in the plugin..
 Bug fixed, now the relationship is working
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'PROFESSORS' *******************
 I created in university-post-type.php the post tupe PROFESSORS and some professors name for testing.
@@ -166,6 +181,7 @@ a) Post Type - is not equal - Post
 This will make that the fields shows in every single post and page..
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'REDUCING CODE' *******************
 
@@ -184,6 +200,7 @@ Setting the background banner in all pages, the sequence is:
 - 'Third:' Set the default image in '/images' folder.
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'Reduce Duplication - "get_template_part()"' *******************
 
@@ -203,6 +220,7 @@ RECICABEL FUNCTION  vs  GET_TEMPLATE_PART()
 2- 'GET_TEMPLATE_PART()' if I want only avoid duplicated code..
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'CREATING A GOOGLE MAP IN CAMPUSES' *******************
 
@@ -216,6 +234,8 @@ RECICABEL FUNCTION  vs  GET_TEMPLATE_PART()
 In 'university_adjust_queries($query)' from functions.php, the code '$query->set('posts_per_page', -1)' means that
 all marks will be seen in the map att once.
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'LIVE SEARCH RESULT' *******************
 
@@ -255,6 +275,9 @@ I used jQuery to handle 'Wordpress Rest API'
 'IMPORTANT' => I can generate HTML between javascript using `<h2>something here ${insert something here}</h2>` 
 I Generate HTML Based on JSON
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 "GET URL ROOT IN JAVASCRIPT"
 In order to make the url more dinamic, I create in functions.php In 'university_files()' set:
 **ps: Function need to be in the bottom...
@@ -277,6 +300,7 @@ In order to make the url more dinamic, I create in functions.php In 'university_
 4- Create another jquery getJSON to search into pages.. (Synchronous)
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'Creating ASYNCHRONOUS request' *************************
 
@@ -287,7 +311,8 @@ Create a '$when()' function that will runs any JSON requests..
 Insert 'authorName' field in JSON using wordpress code in functions.php and then use it in search functions
 to display the name of the author..
 
-**************************************************************************************
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ** 'REST API: Add New Custom Route (URL)' ********************************************
 **************************************************************************************
 
@@ -308,6 +333,8 @@ array(                   '*describe what rappen when someone visit this url'
 )
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ** Search Logic That's Aware of Relationships ************************************
 
 I create a new WP_Query and a while loop to search to professors..
@@ -322,11 +349,8 @@ $results['professors'] = array_values(array_unique($results['professors'], SORT_
 PS: In search function, I want to include the content only fron Posts and Pages, nothing else, for that,
 I will need to create another Custom Field that will contain the contents from programs, professor etc..
 
-***********************************************************************************************************
-***********************************************************************************************************
-****************************************** FINISH *********************************************************
-***********************************************************************************************************
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 EXTRA:
 
@@ -340,6 +364,8 @@ Extra file for FORM:
 
 New file searchform.php (name is important) and use the function '<?php get_search_form()?>' and wordpress will get the form for me.
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ** 'USER ROLES AND PERMISSIONS' *************************
 
@@ -362,6 +388,8 @@ the university-post-types.php using:
 This code will provide make available the permissions to the Event Post Type.
 
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ** 'OPEN REGISTRATIONS' *************************
 
 In General Settings set up the "anyone can register"  and specify the role to 'Subscriber'.
@@ -376,7 +404,8 @@ Code is in functions.php
 
 
 
-***********************************************************************************************************
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 ******************************** CREATE NOTES *************************************************************
 
 1- Create a new page call My Notes (my-notes)
@@ -401,7 +430,37 @@ Used '$.ajax' to controll what type (GET, POST, DELETE) i want to send.
 ** In page-my-notes.js I have between <li> an input field that get title information and show it, thats why I can edit this
 info..  I set the 'readonly' in both <textarea> and <input> to handle this with EDIT button and SAVE button.
 
-PERMOSSIONS:
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** REMOVE THE 'PRIVATE' WORD FROM NOTES:
+
+I used a PHP function that replace the word "Private: " to an empty string ""
+    "echo str_replace("Private: ", "", esc_attr(get_the_title()));   "
+
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** SECURITY
+ALWAYS use the security code 'esc_attr, esc_html, esc_textarea', etc..  to avoid injection of 
+'malicious' code in 'input filds'.
+Link with all esc functions: https://developer.wordpress.org/?s=esc
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+** POST LIMIT FOR EACH USER:
+
+I set in makeNotePrivate() in functions.php, the if statement: 
+  if(count_user_posts(get_current_user_id(),'note') > 4){
+
+    }
+
+It means that, if the current-user-id has more then 4 notes, then
+
+
+PERMISSIONS:
 
 I create a permission in university-post-types.php with this code:
     'capability_type' => 'note', // open to a new permission
