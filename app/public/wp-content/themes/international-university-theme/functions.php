@@ -1,6 +1,7 @@
 <?php 
 
 require get_theme_file_path('./includes/search-rout.php');
+require get_theme_file_path('./includes/like-rout.php');
 
 
 
@@ -14,7 +15,7 @@ require get_theme_file_path('./includes/search-rout.php');
       'get_callback' => function(){
         return count_user_posts(get_current_user_id(),'note');
       }  
-    ));
+    )); 
   }
   add_action('rest_api_init', 'university_custom_rest');
 ?>
@@ -164,11 +165,11 @@ function ourLoginTitle(){
 add_filter('login_headertitle', 'ourLoginTitle');
 
 
-
+//Notes
 function makeNotePrivate($data, $postarr){
   // Protect from malicious js code in textareas and text inputs...
   if($data['post_type'] == 'note'){  
-    if(count_user_posts(get_current_user_id(), 'note') > 2 AND !$postarr['ID']) {
+    if(count_user_posts(get_current_user_id(), 'note') > 4 AND !$postarr['ID']) {
       die("You have reached your note limit.");
     }
     $data['post_content'] = sanitize_textarea_field($data['post_content']);

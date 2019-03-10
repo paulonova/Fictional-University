@@ -457,8 +457,28 @@ I set in makeNotePrivate() in functions.php, the if statement:
 
     }
 
-It means that, if the current-user-id has more then 4 notes, then
+It means that, if the current-user-id has more then 4 notes, then an aleert txt will show in red and alert to delete some posts.
 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+**CREATE LIKE POSTS:
+
+1- I create in single-professor.php the html block to show the a button with a heart and a number.
+2- Then I create a php functions in  '$likeCount' variable that will count how many likes the current user have.
+3- A second php function with '$existQuery' variable to store info if a current user has liked the professor.
+    if true, data-exists = 'yes' if false data-exists = 'no'
+    'yes' = fullheart   'no' = empty heart  => set in html via php variables.
+
+4- Create a Like.js file to handle the event clicks and run the api search.
+5- A separate like-rout.php created inside of the include folder to handle the API in php and then exported to functions.php
+
+
+
+
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 PERMISSIONS:
 

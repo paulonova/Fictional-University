@@ -72,7 +72,7 @@ function university_post_types() {
     'menu_icon' => 'dashicons-welcome-learn-more'
   ));
 
-
+  //Note post type
   register_post_type('note', array(
     'capability_type' => 'note', // open to a new permission
     'map_meta_cap' => true, //inforce and require the permission in right time and place.
@@ -90,6 +90,21 @@ function university_post_types() {
       'singular_name' => 'Note'
     ),
     'menu_icon' => 'dashicons-welcome-write-blog'
+  ));
+
+  //Like post type
+  register_post_type('like', array(
+    'supports' => array('title'),
+    'public' => false,
+    'show_ui' => true, //needs to be shown in editor
+    'labels' => array(
+      'name' => 'Likes',
+      'add_new_item' => 'Add New Like',
+      'edit_item' => 'Edit Like',
+      'all_items' => 'All Likes',
+      'singular_name' => 'Like'
+    ),
+    'menu_icon' => 'dashicons-heart'
   ));
 
 }
